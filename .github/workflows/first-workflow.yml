@@ -1,0 +1,10 @@
+name: testing
+on: push
+jobs:
+    printing-hello:
+        runs-on: ubuntu-latest
+        steps:
+        - name: printing
+          run: |
+            echo "hii working"
+            echo "testing"
