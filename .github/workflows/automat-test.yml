@@ -1,7 +1,7 @@
 name: automated test
-on: manual-dispatch
-  jobs:
-    test code:
+on: workflow_dispatch
+jobs:
+    test_code:
       runs-on: ubuntu-latest
       steps:
         - name: get code
@@ -10,7 +10,7 @@ on: manual-dispatch
           uses: actions/setup-python@v5
           with:
             python-version: "3.10"
-        -name: Install packages
+        - name: Install packages
           run: requirements.txt
-        - name: runing test
+        - name: running test
           run: test.py
