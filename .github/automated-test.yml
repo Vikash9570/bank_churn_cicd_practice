@@ -1,0 +1,16 @@
+name: automated test
+on: manual-dispatch
+  jobs:
+    test code:
+      runs-on: ubuntu-latest
+      steps:
+        - name: get code
+          uses: actions/checkout@v3
+        - name: get python
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.10"
+        -name: Install packages
+          run: requirements.txt
+        - name: runing test
+          run: test.py
