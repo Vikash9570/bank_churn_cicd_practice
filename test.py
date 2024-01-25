@@ -9,11 +9,3 @@ from src.components.model_trainer import ModelTrainer
 from src.pipeline.training_pipeline import calling_function
 
 calling_function()
-
-
-
-
-
-
-
-

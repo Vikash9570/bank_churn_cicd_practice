@@ -1,0 +1,5 @@
+venv
+.git
+artifacts
+logs
+notebook
